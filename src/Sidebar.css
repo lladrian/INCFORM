@@ -1,0 +1,54 @@
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  overflow-y: auto;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  height: calc(100vh - 64px); /* Adjust height to fit within the sidebar */
+  padding-top: 64px; /* Adjust for spacing, e.g., for header or close button */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Thicker scrollbar for better visibility */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F5F5F5; /* Light Gray */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #008080; /* Teal */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #004d40; /* Darker teal on hover */
+}
+
+/* Custom styling for the sidebar */
+.sidebar-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+.sidebar-logo {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.sidebar-title {
+  color: #2F4F4F; /* Slate Gray */
+  margin-bottom: 16px;
+}
+
+.sidebar-profile {
+  margin: 16px auto;
+}
+
+/* Ensure consistent box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}

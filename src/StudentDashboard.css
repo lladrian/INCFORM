@@ -1,0 +1,13 @@
+.table-responsive {
+    overflow-x: auto;
+  }
+  
+  .table-responsive::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .table-responsive {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
